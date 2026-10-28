@@ -13,7 +13,7 @@ Nine drop-in CSS snippets that turn Obsidian's default theme into a calm, editor
 
 **Zero-config.** Keep Obsidian's default theme as-is. There is no theme to install, no Style Settings to configure, and no build step — copy the snippets you want and enable only those. Every file is independent, so you can mix and match.
 
-**Recommended palette.** The demo and screenshots use Obsidian's default theme — cream `#F8F7F3` background, soft blue-gray `#E8EDF2` borders, and lavender `#8A5CF5` accents.
+**Recommended settings.** Base color **Light** · Accent color `#8A5CF5` · Theme **Default**. Enable the nine snippets and this is the exact setup used for the demo.
 
 ## Demo
 
