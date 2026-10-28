@@ -2,12 +2,12 @@
 
 > 奶油纸感卡片、淡紫强调色、彩色文件夹。
 
-九个即插即用的 CSS 片段，把默认 **Moonstone** 亮色主题变成一套安静、克制、适合长时间阅读的工作台：三块悬浮卡片、药丸标签、8 色文件树、macOS 风格深色代码块、通栏表格，以及终于和整体风格统一的 Claudian 面板。
+九个即插即用的 CSS 片段，把 Obsidian 默认主题变成一套安静、克制、适合长时间阅读的工作台：三块悬浮卡片、药丸标签、8 色文件树、macOS 风格深色代码块、通栏表格，以及终于和整体风格统一的 Claudian 面板。
 
 [English](README.md) · **简体中文**
 
-![Obsidian](https://img.shields.io/badge/Obsidian-1.14.5-8A5CF5?style=flat-square&logo=obsidian&logoColor=white)
-![主题](https://img.shields.io/badge/%E4%B8%BB%E9%A2%98-%E4%BB%85%E4%BA%AE%E8%89%B2-8A5CF5?style=flat-square)
+![适用于 Obsidian](https://img.shields.io/badge/%E9%80%82%E7%94%A8%E4%BA%8E-Obsidian-8A5CF5?style=flat-square&logo=obsidian&logoColor=white)
+![主题](https://img.shields.io/badge/%E4%B8%BB%E9%A2%98-%E9%BB%98%E8%AE%A4-8A5CF5?style=flat-square)
 ![片段](https://img.shields.io/badge/%E7%89%87%E6%AE%B5-9-8A5CF5?style=flat-square)
 ![构建](https://img.shields.io/badge/%E6%9E%84%E5%BB%BA-%E6%97%A0-8A5CF5?style=flat-square)
 
@@ -24,7 +24,7 @@
 - 📊 **通栏表格** — 浅灰表头、清晰的 1px 网格。
 - 💬 **Claudian 同步风格** — 用户气泡、深色代码块、点击语言标签即复制。
 - 🫥 **自动隐藏** — 视图标题栏、Ribbon、状态栏、左下库信息栏，需要时再出现。
-- 🌗 **仅亮色主题** — 所有规则都限定在 `body.theme-light`，暗色保持 Obsidian 默认。
+- 🧩 **模块化** — 每个片段相互独立，只启用你真正需要的文件。
 
 ### 设计原则
 
@@ -50,7 +50,7 @@
 
    需要先在系统中安装 Inter、JetBrains Mono、思源黑体 CN。
 
-4. 直接使用默认亮色主题（Moonstone），无需安装主题；只启用你真正需要的片段即可。
+4. 直接使用 Obsidian 默认主题，无需安装主题；只启用你真正需要的片段即可。
 
 ## 文件说明
 
@@ -68,8 +68,7 @@
 
 ## 说明
 
-- 只在 `body.theme-light` 下生效；暗色主题完全走 Obsidian 默认。
-- 已在 Obsidian **1.14.5**（桌面端）验证。
+- 每个片段相互独立，按需启用即可。
 - 除 `colors.css` 外，片段只引用变量；标题栏渐变和图标 mask 是仅有的颜色字面量。
 - 需要逐文件复现细节时，可参考 vault 中的 `CSS片段复现说明`。
 
