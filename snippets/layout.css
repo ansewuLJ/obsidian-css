@@ -96,7 +96,8 @@ body.theme-light {
   overflow: visible;
   pointer-events: none;
   z-index: 10;
-  transition: height 0.15s ease, opacity 0.15s ease;
+  /* 只做透明度过渡，高度立即切换，避免正文重排时抖动 */
+  transition: opacity 0.08s ease;
 }
 
 /* 正文顶部 10px 的隐形悬浮触发区 */
