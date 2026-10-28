@@ -11,6 +11,8 @@
 ![片段](https://img.shields.io/badge/%E7%89%87%E6%AE%B5-9-8A5CF5?style=flat-square)
 ![构建](https://img.shields.io/badge/%E6%9E%84%E5%BB%BA-%E6%97%A0-8A5CF5?style=flat-square)
 
+**零配置。** 直接使用 Obsidian 默认主题即可，不需要安装任何主题，也不需要 Style Settings 或其他插件配置；片段按需复制、按需启用，每个文件相互独立，可以自由组合。
+
 不用装主题、不用 Style Settings、不用构建，九个纯 CSS 文件。
 
 ## 亮点
@@ -48,7 +50,7 @@
 
    需要先在系统中安装 Inter、JetBrains Mono、思源黑体 CN。
 
-4. 使用默认亮色主题（Moonstone），并关闭其他同类主题或片段。
+4. 直接使用默认亮色主题（Moonstone），无需安装主题；只启用你真正需要的片段即可。
 
 ## 文件说明
 

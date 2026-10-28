@@ -11,6 +11,8 @@ Nine drop-in CSS snippets that turn the default **Moonstone** light theme into a
 ![Snippets](https://img.shields.io/badge/snippets-9-8A5CF5?style=flat-square)
 ![Build](https://img.shields.io/badge/build-none-8A5CF5?style=flat-square)
 
+**Zero-config.** Keep Obsidian's default theme as-is. There is no theme to install, no Style Settings to configure, and no build step — copy the snippets you want and enable only those. Every file is independent, so you can mix and match.
+
 No theme install, no Style Settings, no build step — just nine plain CSS files.
 
 ## Highlights
@@ -48,7 +50,7 @@ Calm surfaces, one accent color, and movement only when you ask for it.
 
    Install Inter, JetBrains Mono and Source Han Sans CN first.
 
-4. Use the default light theme (Moonstone) and disable conflicting themes or snippets.
+4. Keep the default light theme (Moonstone). No theme installation is required; enable only the snippets you actually want.
 
 ## Files
 
