@@ -13,6 +13,12 @@ Nine drop-in CSS snippets that turn Obsidian's default theme into a calm, editor
 
 **Zero-config.** Keep Obsidian's default theme as-is. There is no theme to install, no Style Settings to configure, and no build step — copy the snippets you want and enable only those. Every file is independent, so you can mix and match.
 
+## Demo
+
+https://github.com/user-attachments/assets/e3a76fb1-ee33-4fa0-971a-5b8935e2c16f
+
+An 11-second tour of the file tree, auto-hiding view header, ribbon, vault profile and status bar, plus the editor scrollbar.
+
 ## Highlights
 
 - 🃏 **Card-based workspace** — the left sidebar, editor, and right sidebar become three floating cards with 12px radius, a 1px border, and a soft shadow.
