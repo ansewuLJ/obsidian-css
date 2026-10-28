@@ -61,7 +61,8 @@
   --code-scrollbar-track: #454545;
   --code-scrollbar-thumb: #b0b0b0;
   --code-scrollbar-thumb-hover: #d0d0d0;
-  --inline-code-background: #EFEEEB;
+  --inline-code-background: #EAE9E7;
   --inline-code-foreground: #3A3A3C;
+  --inline-code-border: #D0CED0;
   --table-header-border: #C2C0C5;
 }

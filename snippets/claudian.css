@@ -38,7 +38,7 @@ body.theme-light {
 .claudian-code-wrapper {
   position: relative;
   margin: 10px 0;
-  padding-top: 38px;
+  padding: 32px 0 4px;
   background-color: var(--code-background);
   border: 1px solid var(--code-border-color);
   border-radius: 10px;
@@ -49,7 +49,7 @@ body.theme-light {
 .claudian-code-wrapper::before {
   content: "";
   position: absolute;
-  top: 13px;
+  top: 11.5px;
   left: 14px;
   width: 9px;
   height: 9px;
@@ -64,7 +64,7 @@ body.theme-light {
 .claudian-code-wrapper::after {
   content: "";
   position: absolute;
-  top: 38px;
+  top: 32px;
   left: 0;
   right: 0;
   height: 1px;
@@ -74,13 +74,15 @@ body.theme-light {
 
 .claudian-code-wrapper pre {
   margin: 0;
-  padding: 0 14px 14px;
+  padding: 9px 14px 2px;
   background: transparent;
   border: none;
   border-radius: 0;
   overflow-x: auto;
   overflow-y: hidden;
   overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--code-scrollbar-thumb) transparent;
   white-space: pre;
 }
 
@@ -94,30 +96,7 @@ body.theme-light {
   white-space: pre;
 }
 
-/* 代码区横向滚动条：与正文代码块保持一致，1px 细线、无箭头 */
-.claudian-code-wrapper pre::-webkit-scrollbar {
-  height: 1px !important;
-}
-
-.claudian-code-wrapper pre::-webkit-scrollbar-button {
-  display: none !important;
-  width: 0 !important;
-  height: 0 !important;
-}
-
-.claudian-code-wrapper pre::-webkit-scrollbar-track {
-  background: transparent !important;
-  border-radius: 0;
-}
-
-.claudian-code-wrapper pre::-webkit-scrollbar-thumb {
-  background: var(--code-scrollbar-thumb) !important;
-  border-radius: 2px;
-}
-
-.claudian-code-wrapper pre::-webkit-scrollbar-thumb:hover {
-  background: var(--code-scrollbar-thumb-hover) !important;
-}
+/* 代码区使用系统原生滚动条：thin 是原生最细档 */
 
 /* 语言标签在右上角，点击标签即复制 */
 .claudian-code-lang-label {
@@ -151,7 +130,7 @@ body.theme-light {
 /* 没有语言标签时显示复制按钮 */
 .claudian-code-wrapper:not(.has-language) .copy-code-button {
   position: absolute;
-  top: 9px;
+  top: 4px;
   right: 12px;
   z-index: 3;
   display: flex;
@@ -186,6 +165,7 @@ body.theme-light {
   color: var(--inline-code-foreground);
   border: none;
   border-radius: 3px;
+  box-shadow: inset 0 0 0 1px var(--inline-code-border);
   font-family: var(--font-monospace);
   font-size: 0.9em;
 }

@@ -13,7 +13,7 @@
 
 https://github.com/user-attachments/assets/e3a76fb1-ee33-4fa0-971a-5b8935e2c16f
 
-Nine drop-in CSS snippets that turn Obsidian's default theme into a calm, editorial workspace: floating cards, pill tabs, an 8-color file tree, Mac-style code blocks, full-width tables, and a Claudian chat panel that matches the rest of the UI.
+Nine drop-in CSS snippets that turn Obsidian's default theme into a calm, editorial workspace: floating cards, pill tabs, an 8-color file tree, Mac-style code blocks in reading view, full-width tables, and a Claudian chat panel that matches the rest of the UI.
 
 No theme to install, no build step, and no plugin configuration. Enable only the snippets you need.
 
@@ -22,7 +22,7 @@ No theme to install, no build step, and no plugin configuration. Enable only the
 - 🃏 **Card-based workspace** — the left sidebar, editor, and right sidebar become three floating cards with 12px radius, a 1px border, and a soft shadow.
 - 🏷️ **Pill tabs** — a 44px tab bar with a clean active pill and a full-width purple underline.
 - 🎨 **Colorful file tree** — folder icons cycle through eight colors, with open/closed SVG masks, tinted row hovers, and a text-only purple active file.
-- 💻 **Mac-style code blocks** — dark `#282C34` blocks with traffic-light dots, a copy button, horizontal scrolling, and syntax highlighting in reading view and live preview.
+- 💻 **Mac-style code blocks in reading view** — dark `#282C34` blocks with traffic-light dots, a fixed copy button, a native thin horizontal scrollbar, and syntax highlighting. Live preview stays close to Obsidian's native block, with rounded corners and a visible theme-colored caret.
 - 📊 **Full-width tables** — light gray headers and crisp 1px grids.
 - 💬 **Claudian, styled** — matching user bubbles, dark code blocks, and one-click language labels.
 - 👻 **Auto-hiding chrome** — view header, ribbon, status bar, vault profile, and scrollbar stay out of the way until you need them.
@@ -82,7 +82,7 @@ Install Inter, JetBrains Mono, and Source Han Sans CN first.
 | [`layout.css`](snippets/layout.css) | Three cards and spacing; auto-hide for view header, ribbon, status bar and vault profile; scrollbars and resize handles. |
 | [`tabs.css`](snippets/tabs.css) | Tab bar height, active pill, purple underline, remove default separators. |
 | [`file-tree.css`](snippets/file-tree.css) | 8-color folder icons via SVG masks, hover states, selected file text-only purple, recent files active item. |
-| [`code.css`](snippets/code.css) | Reading/live-preview code blocks, dots, copy button, horizontal scrollbar, inline code, syntax highlighting. |
+| [`code.css`](snippets/code.css) | Reading-view Mac-style code blocks, native-style edit-mode blocks, native scrollbar, inline code, syntax highlighting. |
 | [`table.css`](snippets/table.css) | Full-width tables, header background, cell grid. |
 | [`claudian.css`](snippets/claudian.css) | Claudian user bubbles, code blocks, language label/copy button, inline code. |
 | [`heading-level-hint.css`](snippets/heading-level-hint.css) | Show H1–H6 at the left of headings on hover in reading view. |
