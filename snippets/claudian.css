@@ -80,6 +80,9 @@ body.theme-light {
   border-radius: 0;
   overflow-x: auto;
   overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--code-scrollbar-thumb) transparent;
   white-space: pre;
 }
 
@@ -93,23 +96,29 @@ body.theme-light {
   white-space: pre;
 }
 
-/* 代码区横向滚动条 */
+/* 代码区横向滚动条：与正文代码块保持一致，1px 细线、无箭头 */
 .claudian-code-wrapper pre::-webkit-scrollbar {
-  height: 8px;
+  height: 1px !important;
+}
+
+.claudian-code-wrapper pre::-webkit-scrollbar-button {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
 }
 
 .claudian-code-wrapper pre::-webkit-scrollbar-track {
-  background: var(--code-scrollbar-track);
-  border-radius: 4px;
+  background: transparent !important;
+  border-radius: 0;
 }
 
 .claudian-code-wrapper pre::-webkit-scrollbar-thumb {
-  background: var(--code-scrollbar-thumb);
-  border-radius: 4px;
+  background: var(--code-scrollbar-thumb) !important;
+  border-radius: 2px;
 }
 
 .claudian-code-wrapper pre::-webkit-scrollbar-thumb:hover {
-  background: var(--code-scrollbar-thumb-hover);
+  background: var(--code-scrollbar-thumb-hover) !important;
 }
 
 /* 语言标签在右上角，点击标签即复制 */
