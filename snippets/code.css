@@ -19,7 +19,7 @@ body.theme-light {
   overflow-x: auto;
   overflow-y: hidden;
   overscroll-behavior-x: contain;
-  scrollbar-color: var(--code-scrollbar-thumb) var(--code-scrollbar-track);
+  scrollbar-color: var(--code-scrollbar-thumb) transparent;
   white-space: pre;
   tab-size: 4;
 }
@@ -104,19 +104,26 @@ body.theme-light {
 /* 代码区内部横向滚动条 */
 .markdown-preview-view pre::-webkit-scrollbar,
 .markdown-reading-view pre::-webkit-scrollbar {
-  height: 6px;
+  height: 4px;
+}
+
+.markdown-preview-view pre::-webkit-scrollbar-button,
+.markdown-reading-view pre::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 .markdown-preview-view pre::-webkit-scrollbar-track,
 .markdown-reading-view pre::-webkit-scrollbar-track {
-  background: var(--code-scrollbar-track) !important;
-  border-radius: 3px;
+  background: transparent !important;
+  border-radius: 0;
 }
 
 .markdown-preview-view pre::-webkit-scrollbar-thumb,
 .markdown-reading-view pre::-webkit-scrollbar-thumb {
   background: var(--code-scrollbar-thumb) !important;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 .markdown-preview-view pre::-webkit-scrollbar-thumb:hover,
