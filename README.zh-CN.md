@@ -13,8 +13,6 @@
 
 **零配置。** 直接使用 Obsidian 默认主题即可，不需要安装任何主题，也不需要 Style Settings 或其他插件配置；片段按需复制、按需启用，每个文件相互独立，可以自由组合。
 
-不用装主题、不用 Style Settings、不用构建，九个纯 CSS 文件。
-
 ## 亮点
 
 - 🃏 **卡片式工作区** — 左栏、正文、右栏变成三块独立卡片，12px 圆角、1px 描边、柔和阴影。
@@ -25,10 +23,6 @@
 - 💬 **Claudian 同步风格** — 用户气泡、深色代码块、点击语言标签即复制。
 - 🫥 **自动隐藏** — 视图标题栏、Ribbon、状态栏、左下库信息栏，需要时再出现。
 - 🧩 **模块化** — 每个片段相互独立，只启用你真正需要的文件。
-
-### 设计原则
-
-安静的底色、一个强调色，只在需要时出现动效。
 
 ## 快速开始
 
@@ -70,22 +64,3 @@
 
 - 每个片段相互独立，按需启用即可。
 - 除 `colors.css` 外，片段只引用变量；标题栏渐变和图标 mask 是仅有的颜色字面量。
-- 需要逐文件复现细节时，可参考 vault 中的 `CSS片段复现说明`。
-
-## 仓库结构
-
-```text
-obsidian-css/
-├── README.md
-├── README.zh-CN.md
-└── snippets/
-    ├── colors.css
-    ├── layout.css
-    ├── tabs.css
-    ├── file-tree.css
-    ├── code.css
-    ├── table.css
-    ├── claudian.css
-    ├── heading-level-hint.css
-    └── titlebar-purple-gradient.css
-```

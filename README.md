@@ -13,8 +13,6 @@ Nine drop-in CSS snippets that turn Obsidian's default theme into a calm, editor
 
 **Zero-config.** Keep Obsidian's default theme as-is. There is no theme to install, no Style Settings to configure, and no build step — copy the snippets you want and enable only those. Every file is independent, so you can mix and match.
 
-No theme install, no Style Settings, no build step — just nine plain CSS files.
-
 ## Highlights
 
 - 🃏 **Card-based workspace** — the left sidebar, editor, and right sidebar become three floating cards with 12px radius, a 1px border, and a soft shadow.
@@ -25,10 +23,6 @@ No theme install, no Style Settings, no build step — just nine plain CSS files
 - 💬 **Claudian, styled** — matching user bubbles, dark code blocks, and one-click language labels.
 - 🫥 **Auto-hiding chrome** — view header, ribbon, status bar, and vault profile stay out of the way until you need them.
 - 🧩 **Modular** — each snippet is independent; enable only the files you actually want.
-
-### Design philosophy
-
-Calm surfaces, one accent color, and movement only when you ask for it.
 
 ## Quick start
 
@@ -70,22 +64,3 @@ Calm surfaces, one accent color, and movement only when you ask for it.
 
 - Each snippet is independent — enable only what you need.
 - Apart from `colors.css`, snippets only use variables — the title bar gradient and icon masks are the only literal colors.
-- For a detailed, file-by-file reproduction guide, see the Chinese `CSS片段复现说明` in the vault.
-
-## Repository structure
-
-```text
-obsidian-css/
-├── README.md
-├── README.zh-CN.md
-└── snippets/
-    ├── colors.css
-    ├── layout.css
-    ├── tabs.css
-    ├── file-tree.css
-    ├── code.css
-    ├── table.css
-    ├── claudian.css
-    ├── heading-level-hint.css
-    └── titlebar-purple-gradient.css
-```
