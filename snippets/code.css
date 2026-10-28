@@ -31,8 +31,6 @@ body.theme-light {
   overflow-x: auto !important;
   overflow-y: hidden !important;
   overscroll-behavior-x: contain;
-  scrollbar-width: thin !important;
-  scrollbar-color: var(--code-scrollbar-thumb) transparent !important;
   white-space: pre;
   tab-size: 4;
 }

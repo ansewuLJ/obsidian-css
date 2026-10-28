@@ -81,8 +81,6 @@ body.theme-light {
   overflow-x: auto;
   overflow-y: hidden;
   overscroll-behavior-x: contain;
-  scrollbar-width: thin;
-  scrollbar-color: var(--code-scrollbar-thumb) transparent;
   white-space: pre;
 }
 
