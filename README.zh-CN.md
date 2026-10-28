@@ -13,6 +13,8 @@
 
 **零配置。** 直接使用 Obsidian 默认主题即可，不需要安装任何主题，也不需要 Style Settings 或其他插件配置；片段按需复制、按需启用，每个文件相互独立，可以自由组合。
 
+**推荐配色。** 演示和截图使用 Obsidian 默认主题——奶油色 `#F8F7F3` 背景、雾蓝灰 `#E8EDF2` 边框、淡紫 `#8A5CF5` 强调色。
+
 ## 演示
 
 https://github.com/user-attachments/assets/e3a76fb1-ee33-4fa0-971a-5b8935e2c16f
