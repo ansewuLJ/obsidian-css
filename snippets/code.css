@@ -6,16 +6,28 @@ body.theme-light {
 /* --------------------------------------------------------------------------
    阅读区代码块
    -------------------------------------------------------------------------- */
-.markdown-preview-view pre,
-.markdown-reading-view pre {
+.markdown-preview-view .el-pre,
+.markdown-reading-view .el-pre {
   position: relative;
   max-width: 100%;
   box-sizing: border-box;
   margin: 16px 0;
-  padding: 44px 16px 14px;
+  padding: 0 8px 8px;
   background-color: var(--code-background);
   border: 1px solid var(--code-border-color);
   border-radius: 10px;
+  overflow: hidden;
+}
+
+.markdown-preview-view pre,
+.markdown-reading-view pre {
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 44px 8px 6px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
   overflow-x: auto !important;
   overflow-y: hidden !important;
   overscroll-behavior-x: contain;
@@ -26,8 +38,8 @@ body.theme-light {
 }
 
 /* 左上三个圆点 */
-.markdown-preview-view pre::before,
-.markdown-reading-view pre::before {
+.markdown-preview-view .el-pre::before,
+.markdown-reading-view .el-pre::before {
   content: "";
   position: absolute;
   top: 13px;
@@ -41,8 +53,8 @@ body.theme-light {
 }
 
 /* 标题栏分隔线 */
-.markdown-preview-view pre::after,
-.markdown-reading-view pre::after {
+.markdown-preview-view .el-pre::after,
+.markdown-reading-view .el-pre::after {
   content: "";
   position: absolute;
   top: 38px;
@@ -105,7 +117,7 @@ body.theme-light {
 /* 代码区内部横向滚动条 */
 .markdown-preview-view pre::-webkit-scrollbar,
 .markdown-reading-view pre::-webkit-scrollbar {
-  height: 3px !important;
+  height: 1px !important;
 }
 
 .markdown-preview-view pre::-webkit-scrollbar-button,
