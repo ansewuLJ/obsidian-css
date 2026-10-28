@@ -9,6 +9,8 @@ body.theme-light {
 .markdown-preview-view pre,
 .markdown-reading-view pre {
   position: relative;
+  max-width: 100%;
+  box-sizing: border-box;
   margin: 16px 0;
   padding: 44px 16px 14px;
   background-color: var(--code-background);
@@ -16,6 +18,8 @@ body.theme-light {
   border-radius: 10px;
   overflow-x: auto;
   overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scrollbar-color: var(--code-scrollbar-thumb) var(--code-scrollbar-track);
   white-space: pre;
   tab-size: 4;
 }
@@ -82,6 +86,10 @@ body.theme-light {
 
 .markdown-preview-view pre code,
 .markdown-reading-view pre code {
+  display: block;
+  width: max-content;
+  min-width: 100%;
+  box-sizing: border-box;
   padding: 0;
   background: transparent;
   border: none;
@@ -96,19 +104,19 @@ body.theme-light {
 /* 代码区内部横向滚动条 */
 .markdown-preview-view pre::-webkit-scrollbar,
 .markdown-reading-view pre::-webkit-scrollbar {
-  height: 8px;
+  height: 10px;
 }
 
 .markdown-preview-view pre::-webkit-scrollbar-track,
 .markdown-reading-view pre::-webkit-scrollbar-track {
   background: var(--code-scrollbar-track);
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .markdown-preview-view pre::-webkit-scrollbar-thumb,
 .markdown-reading-view pre::-webkit-scrollbar-thumb {
   background: var(--code-scrollbar-thumb);
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .markdown-preview-view pre::-webkit-scrollbar-thumb:hover,

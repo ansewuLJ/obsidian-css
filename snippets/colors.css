@@ -58,9 +58,9 @@
   --canvas-background: transparent;
 
   /* 官方没有对应项的自定义变量 */
-  --code-scrollbar-track: #3a3a3a;
-  --code-scrollbar-thumb: #999999;
-  --code-scrollbar-thumb-hover: #bbbbbb;
+  --code-scrollbar-track: #454545;
+  --code-scrollbar-thumb: #b0b0b0;
+  --code-scrollbar-thumb-hover: #d0d0d0;
   --inline-code-background: #EFEEEB;
   --inline-code-foreground: #3A3A3C;
   --table-header-border: #C2C0C5;
