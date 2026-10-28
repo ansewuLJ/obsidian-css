@@ -1,0 +1,67 @@
+/* ==========================================================================
+   颜色：只覆盖需要改动的官方变量，默认值与跟随其他变量的值不写。
+   仅适配亮色主题。
+   ========================================================================== */
+
+.theme-light {
+  /* 背景 */
+  --background-primary: #F8F7F3;
+  --background-primary-alt: #FDFBF7;
+  --background-secondary: #E8EDF2;
+  --background-secondary-alt: #F8F7F3;
+
+  /* 边框 / 悬停 */
+  --background-modifier-hover: hsla(258, 6%, 64%, 0.15);
+  --background-modifier-border: hsla(258, 35%, 66%, 0.2);
+  --background-modifier-border-hover: hsla(258, 35%, 66%, 0.25);
+  --background-modifier-border-focus: hsla(258, 35%, 66%, 0.3);
+
+  /* 文字 */
+  --text-muted: #707070;
+  --text-faint: #999999;
+  --text-on-accent: #FFFFFF;
+  --text-accent: #8A5CF5;
+  --text-accent-hover: #7045C4;
+  --bold-color: #222222;
+
+  /* 交互 */
+  --interactive-normal: var(--color-base-05);
+  --interactive-hover: #E2E0D8;
+  --interactive-accent: #8A5CF5;
+
+  /* 代码 */
+  --code-background: #282C34;
+  --code-border-color: #666666;
+  --code-normal: #CDCDE2;
+  --code-comment: #7F8796;
+  --code-string: #98C379;
+  --code-keyword: #C678DD;
+  --code-function: #61AFEF;
+  --code-value: #D19A66;
+  --code-tag: #E06C75;
+  --code-important: #E06C75;
+  --code-operator: #56B6C2;
+  --code-property: #CDCDE2;
+  --code-punctuation: #CDCDE2;
+
+  /* 表格 */
+  --table-header-background: #EAE9E7;
+  --table-border-color: #D0CED0;
+
+  /* 滚动条 */
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.10);
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.15);
+
+  /* 状态栏 / 画布 */
+  --status-bar-background: transparent;
+  --status-bar-border-color: transparent;
+  --canvas-background: transparent;
+
+  /* 官方没有对应项的自定义变量 */
+  --code-scrollbar-track: #3a3a3a;
+  --code-scrollbar-thumb: #999999;
+  --code-scrollbar-thumb-hover: #bbbbbb;
+  --inline-code-background: #EFEEEB;
+  --inline-code-foreground: #3A3A3C;
+  --table-header-border: #C2C0C5;
+}

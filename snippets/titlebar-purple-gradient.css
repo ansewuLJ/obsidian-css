@@ -1,0 +1,25 @@
+body.theme-light {
+/* ==========================================================================
+   窗口顶部标题栏的紫韵渐变。
+   ========================================================================== */
+
+.titlebar {
+  background: linear-gradient(
+    90deg,
+    #5b89d8 0%,
+    #776fd8 35%,
+    #a05bd8 70%,
+    #9a76dc 100%
+  );
+  border-bottom: none;
+}
+
+.titlebar-text {
+  color: #eeeaf8;
+  opacity: 1;
+}
+
+.titlebar-button {
+  color: #eeeaf8;
+}
+}

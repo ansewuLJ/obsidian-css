@@ -1,0 +1,113 @@
+body.theme-light {
+/* ==========================================================================
+   左侧文件树：8 色循环文件夹图标、悬停与选中状态、最近文件。
+   ========================================================================== */
+
+/* 顶部新建/排序按钮靠左 */
+.nav-header {
+  padding: 8px 8px 4px;
+}
+
+/* 文件树正文用正常亮度（最近文件面板仍保持次要色） */
+.nav-files-container .nav-folder-title-content,
+.nav-files-container .nav-file-title-content {
+  color: var(--text-normal);
+}
+
+.nav-buttons-container {
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   文件夹图标：用折叠图标做文件夹蒙版，展开/折叠两种图形
+   -------------------------------------------------------------------------- */
+.nav-files-container {
+  --folder-icon-open: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 14l1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2'/%3E%3C/svg%3E");
+  --folder-icon-closed: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
+}
+
+.nav-folder-title .collapse-icon {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transform: none !important;
+}
+
+.nav-folder-title .collapse-icon svg {
+  display: none;
+}
+
+.nav-folder-title .collapse-icon::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  display: block;
+  background-color: var(--folder-color, var(--text-muted));
+  opacity: 0.78;
+  -webkit-mask: var(--folder-icon-open) center / contain no-repeat;
+  mask: var(--folder-icon-open) center / contain no-repeat;
+  transition: background-color 0.12s ease, opacity 0.12s ease;
+}
+
+.nav-folder.is-collapsed > .nav-folder-title .collapse-icon::before {
+  -webkit-mask-image: var(--folder-icon-closed);
+  mask-image: var(--folder-icon-closed);
+}
+
+/* 8 色循环：红、橙、黄、绿、青、蓝、紫、粉 */
+.nav-folder:nth-child(8n + 1 of .nav-folder) { --folder-color: var(--color-red); }
+.nav-folder:nth-child(8n + 2 of .nav-folder) { --folder-color: var(--color-orange); }
+.nav-folder:nth-child(8n + 3 of .nav-folder) { --folder-color: var(--color-yellow); }
+.nav-folder:nth-child(8n + 4 of .nav-folder) { --folder-color: var(--color-green); }
+.nav-folder:nth-child(8n + 5 of .nav-folder) { --folder-color: var(--color-cyan); }
+.nav-folder:nth-child(8n + 6 of .nav-folder) { --folder-color: var(--color-blue); }
+.nav-folder:nth-child(8n + 7 of .nav-folder) { --folder-color: var(--color-purple); }
+.nav-folder:nth-child(8n + 8 of .nav-folder) { --folder-color: var(--color-pink); }
+
+/* --------------------------------------------------------------------------
+   悬停
+   -------------------------------------------------------------------------- */
+.nav-file-title:hover {
+  background-color: var(--background-modifier-hover);
+  box-shadow: inset 1px 0 0 var(--text-accent);
+}
+
+.nav-folder-title:hover {
+  background-color: color-mix(in srgb, var(--folder-color, var(--text-muted)) 14%, transparent) !important;
+  box-shadow: inset 2px 0 0 var(--folder-color, var(--text-muted)) !important;
+}
+
+/* --------------------------------------------------------------------------
+   选中文件：只改文字颜色，不加背景、边框或竖条
+   -------------------------------------------------------------------------- */
+.nav-file-title.is-active:not(.recent-files-title),
+.nav-file-title.is-active:not(.recent-files-title):hover {
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: var(--text-accent);
+}
+
+.nav-file-title.is-active:not(.recent-files-title) .nav-file-title-content {
+  color: var(--text-accent);
+}
+
+/* --------------------------------------------------------------------------
+   最近文件面板：当前文件只变紫字，不铺底色
+   -------------------------------------------------------------------------- */
+.recent-files-title.is-active,
+.recent-files-title.is-active:hover {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: var(--text-accent);
+}
+
+.recent-files-title.is-active .nav-file-title-content {
+  color: var(--text-accent);
+}
+}

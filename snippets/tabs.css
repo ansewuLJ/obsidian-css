@@ -1,0 +1,144 @@
+body.theme-light {
+/* ==========================================================================
+   标签页：透明容器 + 激活标签药丸 + 紫色下划线。
+   ========================================================================== */
+
+/* 容器与标题栏透明，去掉默认分隔线 */
+.workspace-tab-header-container,
+.workspace-tab-header-container-inner {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.workspace-tab-header-container {
+  height: 44px;
+  border-bottom: none;
+}
+
+.mod-root .workspace-tab-header-container {
+  padding: 6px 8px 4px 6px;
+}
+
+.mod-sidedock .workspace-tab-header-container {
+  padding: 6px;
+  gap: 2px;
+}
+
+.workspace-tab-header-container-inner {
+  gap: 4px;
+  padding: 0;
+  margin: 5px 0 0;
+  overflow: visible !important;
+}
+
+.workspace-tab-header + .workspace-tab-header {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.workspace-tab-header-inner::after,
+.workspace-tab-header-container-inner::after {
+  display: none !important;
+  border: none;
+  background: transparent !important;
+  box-shadow: none;
+}
+
+/* 顶部图标点击区统一 32px */
+.workspace-tab-header-container .clickable-icon {
+  padding: 7px;
+  width: 32px;
+  height: 32px;
+}
+
+/* 标签本体 */
+.workspace-tab-header {
+  height: 32px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-faint);
+  box-shadow: none;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.workspace-tab-header-inner {
+  height: 100%;
+  padding: 0 8px;
+  border-radius: 6px;
+  gap: 6px;
+}
+
+.workspace-tab-header-inner-title,
+.workspace-tab-header-inner-icon {
+  color: color-mix(in srgb, var(--text-muted) 60%, var(--background-primary));
+}
+
+.workspace-tab-header-inner-title {
+  font-size: 13px;
+}
+
+/* 激活标签：药丸 + 描边 + 阴影 + 紫色下划线 */
+.workspace-tab-header.is-active {
+  background-color: var(--background-primary-alt) !important;
+  border: 1px solid var(--background-modifier-border-focus);
+  border-radius: 6px;
+  box-shadow: 0 1px 6px color-mix(in srgb, var(--text-muted) 22%, transparent);
+  color: var(--text-accent);
+  overflow: visible;
+  z-index: 2;
+}
+
+/* 侧栏图标标签稍宽，激活时更像一枚方形药丸 */
+.mod-sidedock .workspace-tab-header-inner {
+  padding: 0 11px;
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner,
+.workspace-tab-header.is-active .workspace-tab-header-inner-title,
+.workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+  color: var(--text-accent);
+}
+
+/* Obsidian 用伪元素的大范围奶油色阴影画标签底，会盖住药丸与文字，全部清掉 */
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after,
+.workspace-tab-header::before,
+.workspace-tab-header::after {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  background-image: none !important;
+}
+
+.workspace-tab-header.is-active::before {
+  display: none !important;
+  content: none !important;
+}
+
+.workspace-tab-header.is-active::after {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  top: 34px !important;
+  left: 3px !important;
+  right: 3px !important;
+  width: auto !important;
+  height: 3px !important;
+  border-radius: 2px !important;
+  background: var(--text-accent) !important;
+  pointer-events: none;
+  z-index: 4;
+  transform: none !important;
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+}
+
+/* 标签栏、状态栏、Ribbon 的文字跟随正文色 */
+.workspace-tab-header-container,
+.status-bar,
+.workspace-ribbon {
+  color: var(--text-muted);
+}
+}

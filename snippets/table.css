@@ -1,0 +1,45 @@
+body.theme-light {
+/* ==========================================================================
+   正文表格：通栏、表头浅灰、单元格网格线、表头边框略深。
+   ========================================================================== */
+
+.markdown-preview-view table,
+.markdown-rendered table,
+.markdown-source-view table.table-editor {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.markdown-preview-view th,
+.markdown-preview-view td,
+.markdown-rendered th,
+.markdown-rendered td,
+.markdown-source-view table.table-editor th,
+.markdown-source-view table.table-editor td {
+  border: 1px solid var(--table-border-color);
+}
+
+.markdown-preview-view th,
+.markdown-rendered th,
+.markdown-source-view table.table-editor th {
+  background-color: var(--table-header-background);
+  border-color: var(--table-header-border);
+}
+
+.markdown-preview-view .table-wrapper,
+.markdown-rendered .table-wrapper,
+.markdown-source-view .cm-table-widget .table-wrapper {
+  width: 100% !important;
+  max-width: 100%;
+}
+
+/* 编辑模式下的表格控件左右各有 16px 负边距，补回来才是通栏 */
+.markdown-source-view .cm-table-widget {
+  width: calc(100% + 32px) !important;
+  max-width: none;
+}
+
+.markdown-source-view .cm-table-widget table.table-editor {
+  width: 100% !important;
+}
+}

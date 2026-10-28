@@ -1,0 +1,185 @@
+body.theme-light {
+/* ==========================================================================
+   Claudian 聊天面板：代码块、行内代码、用户消息气泡。
+   ========================================================================== */
+
+/* 面板本身透明，透出卡片底色 */
+.claudian-container,
+.claudian-chat-panel,
+.claudian-tab-content-container,
+.claudian-tab-content,
+.claudian-messages-wrapper,
+.claudian-messages {
+  background: transparent;
+}
+
+/* --------------------------------------------------------------------------
+   用户消息气泡：沿用左栏色，外层透明
+   -------------------------------------------------------------------------- */
+.claudian-message-user {
+  width: 100%;
+  align-items: flex-end;
+}
+
+.claudian-message-user .claudian-message-content {
+  width: fit-content;
+  max-width: 85%;
+  padding: 10px 14px;
+  background-color: var(--background-secondary);
+  color: var(--text-normal);
+  border-radius: 10px;
+  box-shadow: none;
+  overflow-wrap: break-word;
+}
+
+/* --------------------------------------------------------------------------
+   聊天代码块
+   -------------------------------------------------------------------------- */
+.claudian-code-wrapper {
+  position: relative;
+  margin: 10px 0;
+  padding-top: 38px;
+  background-color: var(--code-background);
+  border: 1px solid var(--code-border-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* 左上三个圆点 */
+.claudian-code-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 14px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-red);
+  box-shadow: 16px 0 0 var(--color-yellow), 32px 0 0 var(--color-green);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* 标题栏分隔线 */
+.claudian-code-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 38px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: color-mix(in srgb, var(--code-border-color) 55%, transparent);
+  pointer-events: none;
+}
+
+.claudian-code-wrapper pre {
+  margin: 0;
+  padding: 0 14px 14px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: pre;
+}
+
+.claudian-code-wrapper code {
+  padding: 0;
+  background: transparent;
+  color: var(--code-normal);
+  font-family: var(--font-monospace);
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: pre;
+}
+
+/* 代码区横向滚动条 */
+.claudian-code-wrapper pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+.claudian-code-wrapper pre::-webkit-scrollbar-track {
+  background: var(--code-scrollbar-track);
+  border-radius: 4px;
+}
+
+.claudian-code-wrapper pre::-webkit-scrollbar-thumb {
+  background: var(--code-scrollbar-thumb);
+  border-radius: 4px;
+}
+
+.claudian-code-wrapper pre::-webkit-scrollbar-thumb:hover {
+  background: var(--code-scrollbar-thumb-hover);
+}
+
+/* 语言标签在右上角，点击标签即复制 */
+.claudian-code-lang-label {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  z-index: 3;
+  padding: 2px 4px;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font-monospace);
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+
+.claudian-code-lang-label:hover {
+  opacity: 1;
+  color: var(--text-normal);
+  background: transparent;
+}
+
+/* 有语言标签时不再显示复制按钮 */
+.claudian-code-wrapper.has-language .copy-code-button {
+  display: none;
+}
+
+/* 没有语言标签时显示复制按钮 */
+.claudian-code-wrapper:not(.has-language) .copy-code-button {
+  position: absolute;
+  top: 9px;
+  right: 12px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 4px;
+  background: transparent;
+  border: none;
+  color: var(--code-normal);
+  opacity: 0.72;
+  transition: opacity 0.15s ease;
+}
+
+.claudian-code-wrapper:not(.has-language) .copy-code-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.claudian-code-wrapper:not(.has-language) .copy-code-button:hover {
+  opacity: 1;
+}
+
+/* --------------------------------------------------------------------------
+   聊天中的行内代码
+   -------------------------------------------------------------------------- */
+.claudian-message-content :not(pre) > code,
+.claudian-text-block :not(pre) > code,
+[data-chat-markdown-scope] :not(pre) > code {
+  padding: 1px 4px;
+  background-color: var(--inline-code-background);
+  color: var(--inline-code-foreground);
+  border: none;
+  border-radius: 3px;
+  font-family: var(--font-monospace);
+  font-size: 0.9em;
+}
+}
