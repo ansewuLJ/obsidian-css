@@ -104,24 +104,24 @@ body.theme-light {
 /* 代码区内部横向滚动条 */
 .markdown-preview-view pre::-webkit-scrollbar,
 .markdown-reading-view pre::-webkit-scrollbar {
-  height: 10px;
+  height: 6px;
 }
 
 .markdown-preview-view pre::-webkit-scrollbar-track,
 .markdown-reading-view pre::-webkit-scrollbar-track {
-  background: var(--code-scrollbar-track);
-  border-radius: 5px;
+  background: var(--code-scrollbar-track) !important;
+  border-radius: 3px;
 }
 
 .markdown-preview-view pre::-webkit-scrollbar-thumb,
 .markdown-reading-view pre::-webkit-scrollbar-thumb {
-  background: var(--code-scrollbar-thumb);
-  border-radius: 5px;
+  background: var(--code-scrollbar-thumb) !important;
+  border-radius: 3px;
 }
 
 .markdown-preview-view pre::-webkit-scrollbar-thumb:hover,
 .markdown-reading-view pre::-webkit-scrollbar-thumb:hover {
-  background: var(--code-scrollbar-thumb-hover);
+  background: var(--code-scrollbar-thumb-hover) !important;
 }
 
 /* --------------------------------------------------------------------------
