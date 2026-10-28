@@ -1,0 +1,90 @@
+# Obsidian CSS 片段
+
+> 奶油纸感卡片、淡紫强调色、彩色文件夹。
+
+九个即插即用的 CSS 片段，把默认 **Moonstone** 亮色主题变成一套安静、克制、适合长时间阅读的工作台：三块悬浮卡片、药丸标签、8 色文件树、macOS 风格深色代码块、通栏表格，以及终于和整体风格统一的 Claudian 面板。
+
+[English](README.md) · **简体中文**
+
+![Obsidian](https://img.shields.io/badge/Obsidian-1.14.5-8A5CF5?style=flat-square&logo=obsidian&logoColor=white)
+![主题](https://img.shields.io/badge/%E4%B8%BB%E9%A2%98-%E4%BB%85%E4%BA%AE%E8%89%B2-8A5CF5?style=flat-square)
+![片段](https://img.shields.io/badge/%E7%89%87%E6%AE%B5-9-8A5CF5?style=flat-square)
+![构建](https://img.shields.io/badge/%E6%9E%84%E5%BB%BA-%E6%97%A0-8A5CF5?style=flat-square)
+
+不用装主题、不用 Style Settings、不用构建，九个纯 CSS 文件。
+
+## 亮点
+
+- 🃏 **卡片式工作区** — 左栏、正文、右栏变成三块独立卡片，12px 圆角、1px 描边、柔和阴影。
+- 🏷️ **药丸标签** — 44px 标签栏，激活标签是干净的圆角药丸 + 整条紫色下划线。
+- 🎨 **彩色文件树** — 文件夹图标按 8 色循环，带展开/折叠两种 SVG 形状，悬停整行淡染。
+- 💻 **macOS 风格代码块** — `#282C34` 深色底、红黄绿三圆点、复制按钮，阅读区和实时预览都支持横向滚动。
+- 📊 **通栏表格** — 浅灰表头、清晰的 1px 网格。
+- 💬 **Claudian 同步风格** — 用户气泡、深色代码块、点击语言标签即复制。
+- 🫥 **自动隐藏** — 视图标题栏、Ribbon、状态栏、左下库信息栏，需要时再出现。
+- 🌗 **仅亮色主题** — 所有规则都限定在 `body.theme-light`，暗色保持 Obsidian 默认。
+
+### 设计原则
+
+安静的底色、一个强调色，只在需要时出现动效。
+
+## 快速开始
+
+1. 把 [`snippets/`](snippets/) 下的 9 个 `.css` 文件复制到你的 vault：
+
+   ```text
+   <vault>/.obsidian/snippets/
+   ```
+
+2. 打开 **设置 → 外观 → CSS 片段**，逐个启用。
+3. 推荐字体：
+
+   | 项目 | 值 |
+   | --- | --- |
+   | 界面字体 | 思源黑体 CN |
+   | 文本字体 | `Inter, "思源黑体 CN"` |
+   | 等宽字体 | JetBrains Mono |
+   | 文本字体大小 | 16px |
+
+   需要先在系统中安装 Inter、JetBrains Mono、思源黑体 CN。
+
+4. 使用默认亮色主题（Moonstone），并关闭其他同类主题或片段。
+
+## 文件说明
+
+| 文件 | 功能 |
+| --- | --- |
+| [`colors.css`](snippets/colors.css) | 全部颜色变量；改色只改这个文件。 |
+| [`layout.css`](snippets/layout.css) | 三块卡片与间距；视图标题栏、Ribbon、状态栏、左下库信息栏的自动隐藏；滚动条与分隔条。 |
+| [`tabs.css`](snippets/tabs.css) | 标签栏高度、激活标签药丸、紫色下划线、去掉默认分隔线。 |
+| [`file-tree.css`](snippets/file-tree.css) | 文件夹 8 色循环图标（SVG mask）、悬停状态、选中文件只变紫字、最近文件当前项。 |
+| [`code.css`](snippets/code.css) | 阅读区与实时预览代码块、三圆点、复制按钮、横向滚动条、行内代码、语法高亮。 |
+| [`table.css`](snippets/table.css) | 正文表格通栏、表头底色、单元格网格线。 |
+| [`claudian.css`](snippets/claudian.css) | Claudian 用户气泡、代码块、语言标签与复制按钮、行内代码。 |
+| [`heading-level-hint.css`](snippets/heading-level-hint.css) | 阅读视图鼠标悬停标题时，在左侧显示 H1–H6。 |
+| [`titlebar-purple-gradient.css`](snippets/titlebar-purple-gradient.css) | 窗口标题栏四段紫色渐变与浅紫白文字。 |
+
+## 说明
+
+- 只在 `body.theme-light` 下生效；暗色主题完全走 Obsidian 默认。
+- 已在 Obsidian **1.14.5**（桌面端）验证。
+- 除 `colors.css` 外，片段只引用变量；标题栏渐变和图标 mask 是仅有的颜色字面量。
+- 需要逐文件复现细节时，可参考 vault 中的 `CSS片段复现说明`。
+
+## 仓库结构
+
+```text
+obsidian-css/
+├── README.md
+├── README.zh-CN.md
+└── snippets/
+    ├── colors.css
+    ├── layout.css
+    ├── tabs.css
+    ├── file-tree.css
+    ├── code.css
+    ├── table.css
+    ├── claudian.css
+    ├── heading-level-hint.css
+    └── titlebar-purple-gradient.css
+```
