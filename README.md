@@ -1,60 +1,80 @@
-# Obsidian CSS Snippets
+<h1 align="center">obsidian-css</h1>
 
-> Soft cards, lavender accents, and colorful folders for your Obsidian vault.
+<p align="center">A calm, card-based workspace for Obsidian's default theme.</p>
 
-Nine drop-in CSS snippets that turn Obsidian's default theme into a calm, editorial workspace — cream-paper cards, pill-shaped tabs, an 8-color file tree, Mac-style dark code blocks, full-width tables, and a Claudian chat panel that finally matches the rest of the UI.
+<p align="center">
+  <a href="https://github.com/ansewuLJ/obsidian-css/stargazers"><img src="https://img.shields.io/github/stars/ansewuLJ/obsidian-css?style=flat-square" alt="GitHub Stars"></a>
+  <a href="https://github.com/ansewuLJ/obsidian-css/releases"><img src="https://img.shields.io/github/v/tag/ansewuLJ/obsidian-css?style=flat-square" alt="Latest Release"></a>
+  <a href="https://github.com/ansewuLJ/obsidian-css/releases"><img src="https://img.shields.io/github/downloads/ansewuLJ/obsidian-css/total?style=flat-square" alt="Downloads"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/github/license/ansewuLJ/obsidian-css?style=flat-square" alt="License"></a>
+</p>
 
-**English** · [简体中文](README.zh-CN.md)
-
-![Made for Obsidian](https://img.shields.io/badge/made%20for-Obsidian-8A5CF5?style=flat-square&logo=obsidian&logoColor=white)
-![Theme](https://img.shields.io/badge/theme-default-8A5CF5?style=flat-square)
-![Snippets](https://img.shields.io/badge/snippets-9-8A5CF5?style=flat-square)
-![Build](https://img.shields.io/badge/build-none-8A5CF5?style=flat-square)
-
-**Zero-config.** Keep Obsidian's default theme as-is. There is no theme to install, no Style Settings to configure, and no build step — copy the snippets you want and enable only those. Every file is independent, so you can mix and match.
-
-**Recommended settings.** Base color **Light** · Accent color `#8A5CF5` · Theme **Default**. Enable the nine snippets and this is the exact setup used for the demo.
-
-## Demo
+<p align="center"><strong>English</strong> | <a href="README.zh-CN.md">简体中文</a></p>
 
 https://github.com/user-attachments/assets/e3a76fb1-ee33-4fa0-971a-5b8935e2c16f
 
-An 11-second tour of the file tree, auto-hiding view header, ribbon, vault profile and status bar, plus the editor scrollbar.
+Nine drop-in CSS snippets that turn Obsidian's default theme into a calm, editorial workspace: floating cards, pill tabs, an 8-color file tree, Mac-style code blocks, full-width tables, and a Claudian chat panel that matches the rest of the UI.
 
-## Highlights
+No theme to install, no build step, and no plugin configuration. Enable only the snippets you need.
 
-- 🃏 **Card-based workspace** — the left sidebar, editor, and right sidebar become three floating cards with 12px radius, a 1px border, and a soft shadow.
-- 🏷️ **Pill tabs** — a 44px tab bar with a clean active pill and a full-width purple underline.
-- 🎨 **Colorful file tree** — folder icons cycle through eight colors, with open/closed SVG masks and tinted row hovers.
-- 💻 **Mac-style code blocks** — dark `#282C34` blocks with traffic-light dots, a copy button, and horizontal scrolling in both reading view and live preview.
-- 📊 **Full-width tables** — light gray headers and crisp 1px grids.
-- 💬 **Claudian, styled** — matching user bubbles, dark code blocks, and one-click language labels.
-- 🫥 **Auto-hiding chrome** — view header, ribbon, status bar, and vault profile stay out of the way until you need them.
-- 🧩 **Modular** — each snippet is independent; enable only the files you actually want.
+## ✦ Features
 
-## Quick start
+- **Card-based workspace** — the left sidebar, editor, and right sidebar become three floating cards with 12px radius, a 1px border, and a soft shadow.
+- **Pill tabs** — a 44px tab bar with a clean active pill and a full-width purple underline.
+- **Colorful file tree** — folder icons cycle through eight colors, with open/closed SVG masks, tinted row hovers, and a text-only purple active file.
+- **Mac-style code blocks** — dark `#282C34` blocks with traffic-light dots, a copy button, horizontal scrolling, and syntax highlighting in reading view and live preview.
+- **Full-width tables** — light gray headers and crisp 1px grids.
+- **Claudian, styled** — matching user bubbles, dark code blocks, and one-click language labels.
+- **Auto-hiding chrome** — view header, ribbon, status bar, vault profile, and scrollbar stay out of the way until you need them.
+- **Modular** — nine independent files; enable only the ones you want.
 
-1. Copy the nine `.css` files from [`snippets/`](snippets/) into your vault:
+---
 
-   ```text
-   <vault>/.obsidian/snippets/
-   ```
+## ✦ Install
 
-2. Open **Settings → Appearance → CSS snippets** and enable each file.
-3. Recommended fonts:
+### 1. Download
 
-   | Setting | Value |
-   | --- | --- |
-   | Interface font | Source Han Sans CN (思源黑体 CN) |
-   | Text font | `Inter, "Source Han Sans CN"` |
-   | Monospace font | JetBrains Mono |
-   | Text font size | 16px |
+Download the [latest release](https://github.com/ansewuLJ/obsidian-css/releases/latest) and extract the nine `.css` files into:
 
-   Install Inter, JetBrains Mono and Source Han Sans CN first.
+```text
+<vault>/.obsidian/snippets/
+```
 
-4. Keep Obsidian's default theme. No theme installation is required; enable only the snippets you actually want.
+Or clone the repository and copy them:
 
-## Files
+```bash
+git clone https://github.com/ansewuLJ/obsidian-css.git
+cp obsidian-css/snippets/*.css <vault>/.obsidian/snippets/
+```
+
+### 2. Recommended appearance
+
+In **Settings → Appearance**:
+
+| Setting | Value |
+| --- | --- |
+| Base color | Light |
+| Accent color | `#8A5CF5` |
+| Theme | Default |
+
+### 3. Enable the snippets
+
+Open **Settings → Appearance → CSS snippets** and enable the files you want.
+
+### 4. Fonts
+
+| Setting | Value |
+| --- | --- |
+| Interface font | Source Han Sans CN (思源黑体 CN) |
+| Text font | `Inter, "Source Han Sans CN"` |
+| Monospace font | JetBrains Mono |
+| Text font size | 16px |
+
+Install Inter, JetBrains Mono, and Source Han Sans CN first.
+
+---
+
+## ✦ Files
 
 | File | What it does |
 | --- | --- |
@@ -68,7 +88,12 @@ An 11-second tour of the file tree, auto-hiding view header, ribbon, vault profi
 | [`heading-level-hint.css`](snippets/heading-level-hint.css) | Show H1–H6 at the left of headings on hover in reading view. |
 | [`titlebar-purple-gradient.css`](snippets/titlebar-purple-gradient.css) | Four-stop purple gradient title bar with light purple text. |
 
-## Notes
+## ✦ Notes
 
 - Each snippet is independent — enable only what you need.
-- Apart from `colors.css`, snippets only use variables — the title bar gradient and icon masks are the only literal colors.
+- Apart from `colors.css`, snippets only use variables; the title bar gradient and icon masks are the only literal colors.
+- The recommended appearance settings above are the exact setup used in the demo.
+
+## ✦ License
+
+MIT © [ansewuLJ](https://github.com/ansewuLJ)
