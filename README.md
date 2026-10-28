@@ -17,20 +17,20 @@ Nine drop-in CSS snippets that turn Obsidian's default theme into a calm, editor
 
 No theme to install, no build step, and no plugin configuration. Enable only the snippets you need.
 
-## ✦ Features
+## 🌟 Features
 
-- **Card-based workspace** — the left sidebar, editor, and right sidebar become three floating cards with 12px radius, a 1px border, and a soft shadow.
-- **Pill tabs** — a 44px tab bar with a clean active pill and a full-width purple underline.
-- **Colorful file tree** — folder icons cycle through eight colors, with open/closed SVG masks, tinted row hovers, and a text-only purple active file.
-- **Mac-style code blocks** — dark `#282C34` blocks with traffic-light dots, a copy button, horizontal scrolling, and syntax highlighting in reading view and live preview.
-- **Full-width tables** — light gray headers and crisp 1px grids.
-- **Claudian, styled** — matching user bubbles, dark code blocks, and one-click language labels.
-- **Auto-hiding chrome** — view header, ribbon, status bar, vault profile, and scrollbar stay out of the way until you need them.
-- **Modular** — nine independent files; enable only the ones you want.
+- 🃏 **Card-based workspace** — the left sidebar, editor, and right sidebar become three floating cards with 12px radius, a 1px border, and a soft shadow.
+- 🏷️ **Pill tabs** — a 44px tab bar with a clean active pill and a full-width purple underline.
+- 🎨 **Colorful file tree** — folder icons cycle through eight colors, with open/closed SVG masks, tinted row hovers, and a text-only purple active file.
+- 💻 **Mac-style code blocks** — dark `#282C34` blocks with traffic-light dots, a copy button, horizontal scrolling, and syntax highlighting in reading view and live preview.
+- 📊 **Full-width tables** — light gray headers and crisp 1px grids.
+- 💬 **Claudian, styled** — matching user bubbles, dark code blocks, and one-click language labels.
+- 👻 **Auto-hiding chrome** — view header, ribbon, status bar, vault profile, and scrollbar stay out of the way until you need them.
+- 🧩 **Modular** — nine independent files; enable only the ones you want.
 
 ---
 
-## ✦ Install
+## 📦 Install
 
 ### 1. Download
 
@@ -74,7 +74,7 @@ Install Inter, JetBrains Mono, and Source Han Sans CN first.
 
 ---
 
-## ✦ Files
+## 📁 Files
 
 | File | What it does |
 | --- | --- |
@@ -88,12 +88,12 @@ Install Inter, JetBrains Mono, and Source Han Sans CN first.
 | [`heading-level-hint.css`](snippets/heading-level-hint.css) | Show H1–H6 at the left of headings on hover in reading view. |
 | [`titlebar-purple-gradient.css`](snippets/titlebar-purple-gradient.css) | Four-stop purple gradient title bar with light purple text. |
 
-## ✦ Notes
+## 📝 Notes
 
 - Each snippet is independent — enable only what you need.
 - Apart from `colors.css`, snippets only use variables; the title bar gradient and icon masks are the only literal colors.
 - The recommended appearance settings above are the exact setup used in the demo.
 
-## ✦ License
+## 📜 License
 
 MIT © [ansewuLJ](https://github.com/ansewuLJ)
